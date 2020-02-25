@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 4</title>
+	<link rel="stylesheet" type="text/css" href="css/estiloEjercicio4.css">
+</head>
+<body>
+	<script src="js/validar4.js"></script>
+	<H3>
+		Un alumno desea saber su calificación final en la materia algoritmos. Dicha calificación se compone de los siguientes porcentajes:
+		<br>
+		55% del promedio de sus 3 calificaciones parciales
+		<br>
+		30% de la calificacion del examen final
+		<br>
+		15% de la calificación de un trabajo final
+	</H3>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<form name="Ejercicio4" method="post">
+		<div style="text-align:center;">
+			<table border="1"  style="margin: 0 auto;">
+				<td>
+					Calificación
+				</td>
+				<td>
+					Valor
+				</td>
+				<tr>
+					<td>
+						Ingrese la calificación del primer parcial:
+					</td>
+					<td>
+						<input type="text" name="parcial1" onkeypress="return validarParcial1(event)">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Ingrese la calificación del segundo parcial:
+					</td>
+					<td>
+						<input type="text" name="parcial2" onkeypress="return validarParcial2(event)">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Ingrese la calificación del tercer parcial:
+					</td>
+					<td>
+						<input type="text" name="parcial3" onkeypress="return validarParcial3(event)">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Ingrese la calificación del examen final:
+					</td>
+					<td>
+						<input type="text" name="examenFinal" onkeypress="return validarExamenFinal(event)">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Ingrese la calificación del proyecto final:
+					</td>
+					<td>
+						<input type="text" name="proyectoFinal" onkeypress="return validarProyectoFinal(event)">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" name="calcular" value="Calcular calificación" onclick="calificaciones()">
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						Calificación final:
+					</td>
+					<td>
+						<input type="text" name="calificacionFinal" class="input_text" readonly="readonly">
+					</td>
+				</tr>
+			</table>
+			<br>
+			<br>
+			<img src="relleno4.gif" height="175" width="325">
+			<br>
+			<br>
+			<H2>
+				Haga click <a href="principal.html">AQUI</a> para volver
+			</H2>
+		</div>
+	</form>
+</body>
+</html>

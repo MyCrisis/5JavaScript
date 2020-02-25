@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 2</title>
+	<link rel="stylesheet" type="text/css" href="css/estiloEjercicio2.css">
+</head>
+<body>
+	<script src="js/validar2.js"></script>
+	<H3>
+		Un vendedor recibe un sueldo base mas un 13.8% extra por comision de sus ventas, el vendedor desea saber cuanto dinero obtendrá por concepto de comisiones por las 5 ventas que realiza en el mes y el total que recibirá en el mes tomando en cuenta su sueldo base y comisiones
+	</H3>
+	<br>
+	<form name="Ejercicio2" method="post">
+		<div style="text-align:center;">
+			<table border="1"  style="margin: 0 auto;">
+				<td>
+					Capital
+				</td>
+				<td>
+					Monto
+				</td>
+				<tr>
+					<td>
+						Introduce el sueldo base:
+					</td>
+					<td>
+						<input type="text" name="base" onkeypress="return validarBase(event)">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Introduce la venta 1:
+					</td>
+					<td>
+						<input type="text" name="ventaUno" onkeypress="return validarVentaUno(event)">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Introduce la venta 2:
+					</td>
+					<td>
+						<input type="text" name="ventaDos" onkeypress="return validarVentaDos(event)">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Introduce la venta 3:
+					</td>
+					<td>
+						<input type="text" name="ventaTres" onkeypress="return validarVentaTres(event)">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Introduce la venta 4:
+					</td>
+					<td>
+						<input type="text" name="ventaCuatro" onkeypress="return validarVentaCuatro(event)">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Introduce la venta 5:
+					</td>
+					<td>
+						<input type="text" name="ventaCinco" onkeypress="return validarVentaCinco(event)">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" name="enviar" value="Calcula la ganancia" onclick="darTodo()">
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						Su comisión por la venta uno:
+					</td>
+					<td>
+						<input type="text" name="comisionUnoTotal" class="input_text" readonly="readonly">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Su comisión por la venta dos:
+					</td>
+					<td>
+						<input type="text" name="comisionDosTotal" class="input_text" readonly="readonly">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Su comisión por la venta tres:
+					</td>
+					<td>
+						<input type="text" name="comisionTresTotal" class="input_text" readonly="readonly">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Su comisión por la venta cuatro:
+					</td>
+					<td>
+						<input type="text" name="comisionCuatroTotal" class="input_text" readonly="readonly">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Su comisión por la venta cinco:
+					</td>
+					<td>
+						<input type="text" name="comisionCincoTotal" class="input_text" readonly="readonly">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Su salario total es de:
+					</td>
+					<td>
+						<input type="text" name="sueldoFinal" class="input_text" readonly="readonly">
+					</td>
+				</tr>
+			</table>
+			<br>
+			<br>
+			<H2>
+				Haga click <a href="principal.html">AQUI</a> para volver
+			</H2>
+			<br>
+			<img src="relleno2.gif" height="150" width="400">
+		</div>
+	</form>
+</body>
+</html>

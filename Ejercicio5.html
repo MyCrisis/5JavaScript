@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 5</title>
+	<link rel="stylesheet" type="text/css" href="css/estiloEjercicio5.css">
+</head>
+<body>
+	<script src="js/validar5.js"></script>
+	<H3>
+		Un maestro desea saber que porcentaje de hombres y que porcentaje de mujeres hay en un grupo de estudiantes
+	</H3>
+
+	<form name="Ejercicio5" method="post">
+		<div style="text-align:center;">
+			<br>
+			<img src="relleno5.gif" height="125" width="250">
+			<br>
+			<br>
+			<table border="1"  style="margin: 0 auto;">
+				<td>
+					Datos:
+				</td>
+				<td>
+					Valores:
+				</td>
+				<tr>
+					<td>
+						Introduce la cantidad de mujeres:
+					</td>
+					<td>
+						<input type="text" name="cantMujeres" onkeypress="return validarMujer(event)">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Introduce la cantidad de hombres:
+					</td>
+					<td>
+						<input type="text" name="cantHombres" onkeypress="return validarHombre(event)">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" name="calcularPorcentaje" value="Calcular el porcentaje" onclick="porcentaje()">
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						Porcentaje de mujeres:
+					</td>
+					<td>
+						<input type="text" name="porcentajeTotalMujeres" class="input_text" readonly="readonly">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Porcentaje de hombres:
+					</td>
+					<td>
+						<input type="text" name="porcentajeTotalHombres" class="input_text" readonly="readonly">
+					</td>
+				</tr>
+			</table>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<H2>
+				Haga click <a href="principal.html">AQUI</a> para volver
+			</H2>
+		</div>
+	</form>
+</body>
+</html>

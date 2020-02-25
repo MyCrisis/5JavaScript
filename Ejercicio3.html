@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 3</title>
+	<link rel="stylesheet" type="text/css" href="css/estiloEjercicio3.css">
+</head>
+<body>
+	<script src="js/validar3.js"></script>
+	<H3>
+		Una tienda ofrece un descuento del 7% sobre el total de la compra y un cliente desea saber cuanto deberá pagar finalmente por su compra
+	<img src="relleno3.gif" height="150" width="300">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<form name="Ejercicio3" method="post">
+		<div style="text-align:center;">
+			<table border="1"  style="margin: 0 auto;">
+				<td>
+					Capital:
+				</td>
+				<td>
+					Monto:
+				</td>
+				<tr>
+					<td>
+						Ingrese el costo de todo: $
+					</td>
+					<td>
+						<input type="text" name="costoNormal" onkeypress="return validarCostoNormal(event)">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						descuento del 7%
+					</td>
+					<td>
+						<input type="button" name="Descontar" value="Aplicar" onclick="descuento()">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Su costo total será de:
+					</td>
+					<td>
+						<input type="text" name="precioFinal" class="input_text" readonly="readonly">
+					</td>
+				</tr>
+			</table>
+			<br>
+			<H2>
+				Haga click <a href="principal.html">AQUI</a> para volver
+			</H2>
+			<br>
+		</div>
+	</form>
+</body>
+</html>
